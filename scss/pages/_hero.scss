@@ -1,0 +1,23 @@
+@use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u.
+
+/*Styling for the hero section*/
+/*Default are the mobile styles*/
+
+/*Added breakpoints and styles for tablet and mobile screens from breakpoints.scss file*/
+.hero {
+  display: grid;
+
+  // Giving the image max width of 100% so it stays the same as viewport
+  img {
+    max-width: 100%;
+  }
+  // Sty;ling for the mobile/tablet device viewports
+  @include u.breakpoint-up(medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  // Styling for the viewports of the desktop
+  @include u.breakpoint-up(xlarge) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
