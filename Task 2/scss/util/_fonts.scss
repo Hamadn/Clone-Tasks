@@ -1,0 +1,10 @@
+// Importing fonts from google fonts api
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+// Storing different font-styles in variables to be used later in the code
+$font: "Roboto", sans-serif;
+$font-mon: "Montserrat", sans-serif;
+
+// Storing font-sizes in variables to be used later in the code
+$font-med: 1.125rem;
