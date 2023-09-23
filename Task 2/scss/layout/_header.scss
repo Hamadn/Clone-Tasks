@@ -1,0 +1,50 @@
+@use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
+
+/*Header Styles*/
+
+/*Default mobile styles*/
+/*Added breakpoints from breakpoints.scss file*/
+
+.header {
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    background-color: u.$blue; // Took the colors from the colors.scss file in util folder
+    padding-top: 1rem;
+  }
+
+  // Giving the logo its height and width
+  &__logo {
+    text-decoration: none;
+    color: u.$white;
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    padding-left: 10px;
+    height: 2.8125rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    align-items: center;
+
+    li {
+      &:not(:first-child) {
+        padding-left: 22px;
+      }
+
+      &:last-child {
+        padding-right: 22px;
+      }
+
+      a {
+        text-decoration: none;
+        color: u.$white;
+      }
+    }
+  }
+}
