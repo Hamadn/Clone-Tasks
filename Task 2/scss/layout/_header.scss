@@ -2,9 +2,6 @@
 
 /*Header Styles*/
 
-/*Default mobile styles*/
-/*Added breakpoints from breakpoints.scss file*/
-
 .header {
   nav {
     display: grid;
@@ -14,7 +11,7 @@
     margin-bottom: 1.5rem;
   }
 
-  // Giving the logo its height and width
+  // Logo styles
   &__logo {
     text-decoration: none;
     color: u.$white;
@@ -22,11 +19,13 @@
     font-weight: 600;
   }
 
+  // Input field styles
   &__input {
     padding-left: 10px;
     height: 2.8125rem;
   }
 
+  // Link styles
   &__links {
     display: flex;
     justify-content: end;

@@ -1,5 +1,6 @@
 @use "../util" as u;
 
+// Hero section styles
 .hero {
   display: grid;
   grid-template-columns: 0.9fr repeat(2, 0.3fr);
@@ -33,6 +34,7 @@
     grid-area: rage;
   }
 
+  // Image styles
   &__image {
     max-width: 100%;
     padding: 2px;
