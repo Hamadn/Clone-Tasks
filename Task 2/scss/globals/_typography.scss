@@ -2,12 +2,10 @@
 
 /*Boilerplate styles for the typography elements in the website*/
 h1,
-h2,
-h3 {
+h2 {
   margin-top: 0;
   line-height: 1.15;
   color: u.$white;
-  font-weight: 600;
 }
 
 h1 {
@@ -15,13 +13,13 @@ h1 {
   margin-bottom: 1.5rem;
 }
 h2 {
-  font-size: 1.875rem;
-  margin-bottom: 1.5625rem;
+  color: u.$dark;
+  margin-bottom: 1.5rem;
 }
 
 p {
-  line-height: 1.7;
-  margin-bottom: 2.25rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
 }
 a,
 a:visited,

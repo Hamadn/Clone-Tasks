@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 300px 1fr;
     background-color: u.$blue; // Took the colors from the colors.scss file in util folder
     padding-top: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   // Giving the logo its height and width
@@ -34,11 +35,11 @@
 
     li {
       &:not(:first-child) {
-        padding-left: 22px;
+        padding-left: 1.375rem;
       }
 
       &:last-child {
-        padding-right: 22px;
+        padding-right: 1.375rem;
       }
 
       a {
