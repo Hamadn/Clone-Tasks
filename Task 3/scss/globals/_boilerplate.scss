@@ -1,0 +1,77 @@
+@use "../util" as u;
+
+/*Boilerplate styles for the website*/
+
+/*Change the box sizing to border box so the margin and padding does not add and increse the size of the element
+ and font size to 100%*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/*Removing the default padding and margin from all the elements*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/*Body Styles*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Making different classes to use in the html page to make the code more readable */
+.container {
+  margin: 0 auto;
+
+  &--py {
+    padding-top: 3.4375rem;
+    padding-bottom: 3.4375rem;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.sect2,
+.sect3,
+.sect4,
+.sect5 {
+  height: 40px;
+}
+
+.sect1 {
+  background-color: u.$greywhite;
+  height: 50px;
+}
+
+.sect2 {
+  background-color: u.$blue;
+}
+
+.sect3 {
+  background-color: u.$navyblue;
+}
+
+.sect4 {
+  background-color: u.$red;
+}
+
+.sect5 {
+  background-color: u.$orange;
+}
