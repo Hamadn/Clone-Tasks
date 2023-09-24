@@ -1,0 +1,49 @@
+@use "../util" as u;
+
+.hero {
+  display: grid;
+  grid-template-columns: 0.9fr repeat(2, 0.3fr);
+  grid-template-rows: 1fr repeat(2, 0.5fr);
+  gap: 0.625rem;
+  grid-template-areas:
+    "avengers lone predator"
+    "avengers millennium rage";
+
+  &__movie1 {
+    grid-area: avengers;
+  }
+
+  &__movie2 {
+    padding: 1rem;
+    grid-area: lone;
+  }
+
+  &__movie3 {
+    padding: 1rem;
+    grid-area: predator;
+  }
+
+  &__movie4 {
+    padding: 1rem;
+    grid-area: millennium;
+  }
+
+  &__movie5 {
+    padding: 1rem;
+    grid-area: rage;
+  }
+
+  &__image {
+    max-width: 100%;
+    padding: 2px;
+  }
+
+  &__content {
+    flex-direction: column;
+  }
+
+  #avengers {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
