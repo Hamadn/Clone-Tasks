@@ -1,0 +1,7 @@
+@use "../util" as u;
+
+// Footer styles
+footer {
+  background-color: u.$lightblue;
+  height: 50px;
+}
