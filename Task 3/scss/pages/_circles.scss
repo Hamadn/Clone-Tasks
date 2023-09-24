@@ -1,0 +1,47 @@
+@use "../util" as u;
+
+// Styles for the cicle section in the page
+.circles {
+  background-color: u.$greywhite;
+  height: 480px;
+  flex-direction: column;
+  gap: 10px;
+
+  // Styles for the desktop
+  @include u.breakpoint-up(xlarge) {
+    display: grid;
+    grid-template-columns: 70px 80px 90px 100px;
+    align-items: center;
+    place-content: center;
+    height: 210px;
+  }
+
+  // Styles for the individual circles in side the div
+  &__blue {
+    background-color: u.$blue;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+  }
+
+  &__navyblue {
+    background-color: u.$navyblue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+  }
+
+  &__red {
+    background-color: u.$red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+  }
+
+  &__orange {
+    background-color: u.$orange;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+  }
+}

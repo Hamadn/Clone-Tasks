@@ -1,0 +1,65 @@
+@use "../util" as u;
+
+.background {
+  background-color: u.$lightblue;
+
+  // Styles for the square changing according to the viewport
+  &__square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: u.$grey;
+
+    // Styles for tablet
+    @include u.breakpoint-up(medium) {
+      height: 300px;
+      width: 300px;
+    }
+
+    // Styles for desktop
+    @include u.breakpoint-up(xlarge) {
+      height: 400px;
+      width: 400px;
+    }
+
+    span {
+      color: u.$dark;
+    }
+  }
+
+  // Displaying the height and width in the square according to the viewport of the device
+  &__sm-view {
+    @include u.breakpoint-up(medium) {
+      display: none;
+    }
+
+    @include u.breakpoint-up(large) {
+      display: none;
+    }
+  }
+
+  &__med-view {
+    @include u.breakpoint-down(small) {
+      display: none;
+    }
+
+    @include u.breakpoint-up(xlarge) {
+      display: none;
+    }
+  }
+
+  &__lg-view {
+    @include u.breakpoint-down(small) {
+      display: none;
+    }
+    @include u.breakpoint-down(medium) {
+      display: none;
+    }
+
+    @include u.breakpoint-down(large) {
+      display: none;
+    }
+  }
+}
