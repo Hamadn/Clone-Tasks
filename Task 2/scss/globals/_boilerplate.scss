@@ -31,6 +31,11 @@ body {
   max-width: 75rem;
   margin: 0 auto;
 
+  &--px {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   &--pt {
     padding-top: 2.25rem;
   }

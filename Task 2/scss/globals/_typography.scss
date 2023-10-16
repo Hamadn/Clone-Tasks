@@ -13,12 +13,15 @@ h1 {
   margin-bottom: 1.5rem;
 }
 h2 {
+  margin-top: 1rem;
   color: u.$dark;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 p {
-  font-weight: 100;
+  font-weight: lighter;
   margin-bottom: 2rem;
 }
 a,
