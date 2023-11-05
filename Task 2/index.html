@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone Task 2</title>
     <!--Linking the stylesheet for the website-->
-    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="/dist/style.css" />
   </head>
   <body>
     <!--Header Section-->
     <header class="header">
-      <nav class="container--pb container--pl">
+      <div class="overlay has-fade"></div>
+      <nav class="container--pb container--pl flex flex-jc-sb">
         <a href="#" class="header__logo flex flex-ai-c">What's On</a>
-        <input class="header__input" type="text" placeholder="Search..." />
-        <ul class="header__links">
+        <a href="#" id="hamburgerBtn" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <input
+          class="header__input hide-for-mobile"
+          type="text"
+          placeholder="Search..."
+        />
+        <div class="header__links hide-for-mobile">
+          <a href="#">Movies</a>
+          <a href="#">TV</a>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </nav>
+
+      <div class="header__menu has-fade">
+        <ul>
           <li>
             <a href="#">Movies</a>
           </li>
@@ -27,7 +46,7 @@
             <a href="#">Register</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
 
     <!--Hero Section-->
@@ -113,5 +132,7 @@
         </div>
       </div>
     </section>
+    <footer>Copyright &copy; 2021 What's On</footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
