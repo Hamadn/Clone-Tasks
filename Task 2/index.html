@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone Task 2</title>
     <!--Linking the stylesheet for the website-->
-    <link rel="stylesheet" href="/dist/style.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
   </head>
   <body>
     <!--Header Section-->
@@ -50,14 +50,14 @@
     </header>
 
     <!--Hero Section-->
-    <section class="hero container">
-      <div class="hero__movie1 shadow">
+    <section class="hero container container--px">
+      <div class="hero__movie1 shadow background">
         <img
           class="hero__image"
           src="./images/avengers.jpg"
           alt="avengers-pic"
         />
-        <div id="avengers" class="flex container--px">
+        <div class="hero__content flex container--px">
           <h2>Avengers - Endgame</h2>
           <p>
             After the devastating events of Avengers: Infinity War (2018), the
@@ -70,7 +70,7 @@
       </div>
       <div class="hero__side">
         <div class="hero__top">
-          <div class="hero__movie2 shadow">
+          <div class="hero__movie2 shadow background">
             <img
               class="hero__image"
               src="./images/lone-gunmen.jpg"
@@ -85,7 +85,7 @@
               <input class="button" type="button" value="More Info..." />
             </div>
           </div>
-          <div class="hero__movie3 shadow">
+          <div class="hero__movie3 shadow background">
             <img
               class="hero__image"
               src="./images/predators.jpg"
@@ -102,7 +102,7 @@
           </div>
         </div>
         <div class="hero__bottom">
-          <div class="hero__movie4 shadow">
+          <div class="hero__movie4 shadow container--mb background">
             <img
               class="hero__image"
               src="./images/millenium.jpg"
@@ -118,7 +118,7 @@
               <input class="button" type="button" value="More Info..." />
             </div>
           </div>
-          <div class="hero__movie5 shadow">
+          <div class="hero__movie5 shadow container--mb background">
             <img class="hero__image" src="./images/rage.jpg" alt="rage-pic" />
             <div class="hero__content flex">
               <h2>Rage</h2>
@@ -132,7 +132,7 @@
         </div>
       </div>
     </section>
-    <footer>Copyright &copy; 2021 What's On</footer>
+    <footer class="container--mt">Copyright &copy; 2021 What's On.</footer>
     <script src="./js/index.js"></script>
   </body>
 </html>

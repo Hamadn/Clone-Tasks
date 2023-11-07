@@ -24,11 +24,12 @@ body {
   line-height: 1.7;
   margin: 0;
   padding: 0;
+  background-color: u.$light-gray;
 }
 
 /*Making different classes to use in the html page to make the code more readable */
 .container {
-  max-width: 75rem;
+  max-width: 80rem;
   margin: 0 auto;
 
   &--px {
@@ -49,6 +50,14 @@ body {
   &--pr {
     padding-right: 2.25rem;
   }
+
+  &--mb {
+    margin-bottom: 1rem;
+  }
+
+  &--mt {
+    margin-top: 4.5rem;
+  }
 }
 
 .flex {
@@ -66,7 +75,7 @@ body {
 }
 
 .button {
-  padding: 0.75rem;
+  padding: 0.7rem;
   color: u.$white !important;
   background-color: u.$blue;
   border-radius: 5px;
@@ -76,13 +85,17 @@ body {
   border: none;
 }
 
+.background {
+  background-color: u.$white;
+}
+
 .shadow {
   box-shadow: 0px 0px 5px u.$gray;
 }
 
 /*Classes for the responsiveness of the nav bar and hamburger menu in tablet and mobile device*/
 .hide-for-mobile {
-  @include u.breakpoint-down(medium) {
+  @include u.breakpoint-down(large) {
     display: none;
   }
 }
