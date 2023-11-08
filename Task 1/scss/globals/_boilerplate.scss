@@ -51,16 +51,3 @@ body {
     padding-right: 2.25rem;
   }
 }
-
-/*Classes for the responsiveness of the nav bar and hamburger menu in tablet and mobile device*/
-.hide-for-mobile {
-  @include u.breakpoint-down(medium) {
-    display: none;
-  }
-}
-
-.hide-for-desktop {
-  @include u.breakpoint-up(large) {
-    display: none;
-  }
-}
