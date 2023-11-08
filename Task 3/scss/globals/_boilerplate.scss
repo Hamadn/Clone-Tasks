@@ -24,9 +24,13 @@ body {
   padding: 0;
 }
 
+@mixin container {
+  margin: 0 auto;
+}
+
 /*Making different classes to use in the html page to make the code more readable */
 .container {
-  margin: 0 auto;
+  @include container;
 
   &--py {
     padding-top: 3.4375rem;
