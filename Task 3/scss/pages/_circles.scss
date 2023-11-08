@@ -8,7 +8,7 @@
   gap: 10px;
 
   // Styles for the desktop
-  @include u.breakpoint-up(xlarge) {
+  @include u.breakpoint-up(large) {
     display: grid;
     grid-template-columns: 70px 80px 90px 100px;
     align-items: center;
