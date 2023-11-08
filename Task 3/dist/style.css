@@ -32,6 +32,9 @@ body {
 .flex-ai-c {
   align-items: center;
 }
+.hover:hover {
+  background-color: #454545;
+}
 .sect2,
 .sect3,
 .sect4,
@@ -67,56 +70,22 @@ footer {
   justify-content: center;
   height: 200px;
   width: 200px;
-  background-color: #ccc;
+  background-image: url(https://via.placeholder.com/200);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 30.0625em) {
   .background__square {
     height: 300px;
     width: 300px;
+    background-image: url(https://via.placeholder.com/300);
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 50.0625em) {
   .background__square {
     height: 400px;
     width: 400px;
-  }
-}
-.background__square span {
-  color: #969696;
-}
-@media (min-width: 30.0625em) {
-  .background__sm-view {
-    display: none;
-  }
-}
-@media (min-width: 38.8125em) {
-  .background__sm-view {
-    display: none;
-  }
-}
-@media (max-width: 30em) {
-  .background__med-view {
-    display: none;
-  }
-}
-@media (min-width: 64em) {
-  .background__med-view {
-    display: none;
-  }
-}
-@media (max-width: 30em) {
-  .background__lg-view {
-    display: none;
-  }
-}
-@media (max-width: 38.75em) {
-  .background__lg-view {
-    display: none;
-  }
-}
-@media (max-width: 63.875em) {
-  .background__lg-view {
-    display: none;
+    background-image: url(https://via.placeholder.com/400);
   }
 }
 .circles {
@@ -125,7 +94,7 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
-@media (min-width: 64em) {
+@media (min-width: 38.8125em) {
   .circles {
     display: grid;
     grid-template-columns: 70px 80px 90px 100px;
