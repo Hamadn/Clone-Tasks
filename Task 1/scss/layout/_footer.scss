@@ -1,16 +1,10 @@
 @use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
 
 /*Footer Styles*/
-
-/*Included styles for desktop and tablet screens*/
-/*Added breakpoints from breakpoints.scss file*/
-
-/*Default mobile styles*/
-
 .footer {
   background-color: u.$dark; // Took the colors from the colors.scss file in util folder
   padding: 1.5625rem;
-  color: u.$white;
+  color: u.$white; // Took the colors from the colors.scss file in util folder
 
   &__copyright {
     text-align: center;

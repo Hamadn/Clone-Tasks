@@ -1,10 +1,6 @@
 @use "../util/" as u; // Importing the utility styles and mixins from util folder and assigning it an alias of u
 
 /*Header Styles*/
-
-/*Default mobile styles*/
-/*Added breakpoints from breakpoints.scss file*/
-
 .header {
   nav {
     background-color: u.$white; // Took the colors from the colors.scss file in util folder
