@@ -52,6 +52,12 @@ body {
   }
 }
 
+.hover {
+  &:hover {
+    background-color: u.$hover;
+  }
+}
+
 .sect2,
 .sect3,
 .sect4,
